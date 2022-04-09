@@ -58,6 +58,7 @@ const Homepage = () => {
     const [isDisplayAlert, setisDisplayAlert] = useState("none")
 const handleSubmit = (e)=>{
     e.preventDefault()
+    if(amount !== 0 && reason !== "" && duration !==0 && upi !== ""){
     fetch('http://localhost:3000/borrow-request', {
       method: 'POST',
       headers: {
@@ -79,6 +80,7 @@ const handleSubmit = (e)=>{
       setisDisplayAlert("block")
         setAlertt("Your request could not be placed due to some error. Please try again later")
     });
+  }
 }
     return (
         <div className="container">

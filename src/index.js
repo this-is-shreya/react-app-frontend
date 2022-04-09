@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom';
 import Signup from "./components/basics/signup"
 import Login from "./components/basics/login"
 import Homepage from './components/basics/homepage';
+import Notfound from './components/basics/notfound'
 import "./components/basics/style.css"
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -16,6 +17,7 @@ export default function App() {
           <Route path="/" element={<Login />} />
           <Route path="signup" element={<Signup />} />
           <Route path="home/:name" element={<Homepage />} />
+          <Route path="*" element={<Notfound />} />
           
       
       </Routes>
