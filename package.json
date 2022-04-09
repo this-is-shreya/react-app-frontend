@@ -10,7 +10,8 @@
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-scripts": "5.0.0",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "react-router-dom": "^6.3.0"
   },
   "main": "index.js",
   "engines": {
@@ -41,6 +42,11 @@
       "last 1 safari version"
     ]
   },
+   "buildpacks": [
+    {
+      "url": "https://buildpack-registry.s3.amazonaws.com/buildpacks/mars/create-react-app.tgz"
+    }
+  ]
   "devDependencies": {
     "react-router-dom": "^6.3.0"
   }
